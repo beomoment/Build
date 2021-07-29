@@ -239,6 +239,10 @@ case "$DEVICE" in
     check_os_release "arm" "$VERSION" "$DEVICE"
     sh scripts/raspberryimage.sh -v "$VERSION" -p "$PATCH"
     ;;
+  beom) echo 'Writing Beomoment Image File'
+    check_os_release "arm" "$VERSION" "$DEVICE"
+    sh scripts/beomomentimage.sh -v "$VERSION" -p "$PATCH"
+    ;;
   cuboxi) echo 'Writing Cubox-i Image File'
     check_os_release "armv7" "$VERSION" "$DEVICE"
     sh scripts/cuboxiimage.sh -v "$VERSION" -p "$PATCH" -a armv7
