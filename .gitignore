@@ -1,0 +1,7 @@
+# IntelliJ project files
+.idea
+*.iml
+/build
+/*.sqsh
+/*.img
+/*.img.md5
