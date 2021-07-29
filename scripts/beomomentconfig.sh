@@ -307,6 +307,14 @@ done
 cd ..
 rm -rf wifi
 
+cd /root/
+
+echo "Installing Kiosk"
+sh /install-kiosk.sh
+
+echo "Kiosk installed"
+rm /install-kiosk.sh
+
 #On The Fly Patch
 if [ "$PATCH" = "volumio" ]; then
 echo "No Patch To Apply"

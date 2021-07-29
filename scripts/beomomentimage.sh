@@ -77,7 +77,7 @@ sync
 echo "Entering Chroot Environment"
 
 cp scripts/beomomentconfig.sh /mnt/volumio/rootfs
-
+cp scripts/install-kiosk.sh /mnt/volumio/rootfs
 cp scripts/initramfs/init /mnt/volumio/rootfs/root
 cp scripts/initramfs/mkinitramfs-custom.sh /mnt/volumio/rootfs/usr/local/sbin
 
